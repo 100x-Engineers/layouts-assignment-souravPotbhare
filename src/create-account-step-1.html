@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Sign-up</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="w-screen h-screen items-center justify-center flex">
+
+    <section class="w-page h-page bg-neutral-1000">
+
+        <!-- header -->
+        <section class="pt-3.5 pr-3.5 pb-3 pl-5 w-96 h-11 items-center justify-end flex shrink-0 gap-60">
+            <p class="text-neutral-50">9:41</p>
+            <img src="/images/container.svg" alt="">
+        </section>
+
+        <!-- content -->
+        <section class="px-4 pb-5 w-page h-main-page flex flex-col gap-3">
+
+            <!-- step 1 of 4 -->
+            <div class="py-2 flex gap-5">
+                <a href="/src/index.html"><img src="/images/cancel.svg" alt=""></a>
+                <header class="text-neutral-50 font-bold">Step 1 of 4</header>
+            </div>
+
+            <!-- main content -->
+            <div class="flex flex-col gap-5">
+                
+                <p class="font-Inter font-bold text-2xl text-neutral-50">Create your account</p>
+
+                <section class="self-stretch flex flex-col gap-8">
+                    
+                    <fieldset class="px-3 py-4 w-110.5 rounded border border-twitter-blue flex gap-2.5">
+                        <legend class="px-1 text-sm font-medium text-twitter-blue">Name</legend>
+                        <div class="w-full flex justify-between items-center">
+                          <input class="w-full h-auto text-xl items-center text-neutral-50 bg-transparent outline-none" type="text" placeholder="Type your name">
+                          <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                        </div>
+                    </fieldset>
+        
+                    <fieldset class="px-3 py-4 w-110.5 rounded border border-neutral-500 flex gap-2.5">
+                        <legend class="px-1 text-sm font-medium text-neutral-500">Email</legend>
+                        <input class="w-full text-xl text-neutral-50 items-center bg-transparent outline-none" type="email" placeholder="Email">
+                    </fieldset>
+                      
+                    <section class="flex-col gap-3">
+                        <p class="font-Inter font-bold text-base text-neutral-50 ">Date of birth</p>
+                        <p class="font-Inter font-normal text-neutral-50 text-sm text-opacity-60 ">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+                    </section>
+    
+                    <!-- dropdowns -->
+                    <section class="self-stretch items-center flex gap-3">
+              
+                        <fieldset class="px-3 py-4 w-full rounded border border-neutral-500 items-center justify-between self-stretch flex gap-2.5">
+                          <legend class="px-1 text-sm font-medium text-neutral-500">Month</legend>
+                          <div class="w-full flex justify-between items-center">
+                            <!-- <button class="text-neutral-50" type="button" id="menu1" data-toggle="dropdown">Month</button> -->
+                            <input class="w-full h-auto text-xl items-center text-neutral-50 bg-transparent" type="text" placeholder="month">
+                            <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                          </div>
+                          <button>
+                            <img src="/images/chevron-down.svg" alt="">
+                          </button>
+                        </fieldset>
+          
+                        <section class="items-center flex gap-3">
+                          <fieldset class="px-3 py-4 w-full rounded border border-neutral-500 items-center justify-between self-stretch flex gap-2.5">
+                            <legend class="px-1 text-sm font-medium text-neutral-500">Day</legend>
+                            <div class="w-full flex justify-between items-center">
+                              <!-- <button class="text-neutral-50" type="button" id="menu1" data-toggle="dropdown">Day</button> -->
+                              <input class="w-full h-auto text-xl items-center text-neutral-50 bg-transparent" type="text" placeholder="day">
+                              <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                            </div>
+                            <button>
+                              <img src="/images/chevron-down.svg" alt="">
+                            </button>
+                          </fieldset>
+            
+                          <fieldset class="px-3 py-4 w-full rounded border border-neutral-500 items-center justify-between self-stretch flex gap-2.5">
+                            <legend class="px-1 text-sm font-medium text-neutral-500">Year</legend>
+                            <div class="w-full flex justify-between items-center">
+                              <!-- <button class="text-neutral-50" type="button" id="menu1" data-toggle="dropdown">Year</button> -->
+                              <input class="w-full h-auto text-xl items-center text-neutral-50 bg-transparent" type="text" placeholder="year">
+                              <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                            </div>
+                            <button>
+                              <img src="/images/chevron-down.svg" alt="">
+                            </button>
+                          </fieldset>
+                        </section>
+          
+                    </section>
+                    
+                </section>
+            </div>
+
+            <!-- bottom button -->
+            
+            <!-- <section class="px-5 pt-20 w-full h-full items-center justify-end self-stretch flex flex-col flex-1 gap-2.5"> 
+                <button class="px-6 py-3 w-full h-auto font-Inter font-bold text-base rounded-4xl shadow-md backdrop-blur-xl justify-center items-center self-stretch bg-neutral-500 flex cursor-not-allowed">Create account</button>
+            </section> -->
+
+            <a class="px-5 pt-20 w-full h-full items-center justify-end self-stretch flex flex-col flex-1 gap-2.5" href="/src/create-account-step-2.html">
+              <button class="px-6 py-3 w-full h-auto font-Inter font-bold text-base rounded-4xl shadow-md backdrop-blur-xl justify-center items-center self-stretch bg-neutral-500 flex cursor-not-allowed">Create account</button>
+            </a>
+
+        </section>
+
+    </section>
+</body>
+</html>
