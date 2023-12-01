@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2.1 - Home Feed</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="w-screen h-screen items-center justify-center flex">
+  
+  <!-- user profile -->
+  <section class="w-page h-page bg-neutral-1000 overflow-auto">
+
+    <!-- header -->
+    <section class="pt-3.5 pr-3.5 pb-3 pl-5 w-96 h-11 items-center justify-end flex shrink-0 gap-60">
+        <p class="text-neutral-50">9:41</p>
+        <img src="/images/container.svg" alt="">
+    </section>
+    
+    <!-- cover image -->
+    <section class="w-page h-auto">
+        <img src="/images/cover-image.png" alt="">
+    </section>
+
+    <!-- profile pic and 100x logo -->
+    <section class="px-4 w-page h-auto justify-between flex gap-32">
+        <section>
+            <img class="w-16 h-16 -mt-8 rounded-4xl flex-shrink-0" src="/images/users/user-avatar.png" alt="profile picture">
+        </section>
+        <section class="px-5 py-2 rounded-3xl border border-border-blue hover:bg-neutral-900 items-center justify-center inline-flex">
+            <a href="/src/user-profile/edit-profile.html">
+                <button class="font-Inter font-medium text-base text-neutral-50">Edit profile</button>
+            </a>
+        </section>
+    </section>
+
+    <!-- personal info and bio -->
+    <section class="ml-4 p-1 w-[354px] h-auto flex flex-col gap-4">
+        
+        <section class="items-start justify-end flex flex-col gap-1">
+            <p class="font-Inter font-bold text-xl text-neutral-50">Sourav Potbhare</p>
+            <p class="font-Inter font-normal text-base text-neutral-500">@sourav_potbhare</p>
+        </section>
+
+        <p class="font-Inter font-normal text-base text-neutral-50">Digital Goodies Team - Web & Mobile UI/UX development; Graphics; Illustrations</p>
+
+        <section class="flex gap-5">
+            <div class="items-center flex gap-1">
+                <img src="/images/link.svg" alt="">
+                <a href="">
+                    <p class="font-Inter font-normal text-base text-twitter-blue">pixsells.io</p>
+                </a>
+            </div>
+            <div class="items-center flex gap-1">
+                <img src="/images/calendar.svg" alt="">
+                <p class="font-Inter font-normal text-base text-neutral-500">Joined September 2018</p>
+            </div>
+        </section>
+
+        <section class="flex gap-5">
+            <div class="flex gap-1">
+                <p class="font-Inter font-medium text-base text-neutral-50">217</p>
+                <p class="font-Inter font-normal text-base text-neutral-500">Following</p>
+            </div>
+            <div class="flex gap-1">
+                <p class="font-Inter font-medium text-base text-neutral-50">118</p>
+                <p class="font-Inter font-normal text-base text-neutral-500">Followers</p>
+            </div>
+        </section>
+
+    </section>
+
+    
+    <!-- posts -->
+    <section class="w-full h-full overflow-y-scroll"> 
+
+      <section class="px-4 py-2 w-auto h-auto border-b border-neutral-700 flex gap-4">
+        <div class="w-12 h-12">
+          <img class="rounded-full flex-shrink-0" src="/images/users/user-avatar-2.png" alt="profile picture">
+        </div>
+        <div class="w-full flex flex-col gap-2">
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-2">
+              <p class="text-neutral-50">Name</p>
+              <p class="text-neutral-500">@handle • 32m</p>
+            </div>
+            <p class="font-Inter text-neutral-50">Don't wish for it, work for it.</p>
+          </div>
+          <div class="py-3 flex justify-between">
+            <!-- comment  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/comment.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">11</p>
+            </div>
+            <!-- group  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/retweet.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">270</p>
+            </div>
+            <!-- heart  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/heart.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">1,869</p>
+            </div>
+            <!-- frame  -->
+            <div class="flex gap-1 items-center justify-center">
+              <span class="flex gap-0.5 items-end">
+                <p class="w-0.5 h-2.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-3.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-2 bg-neutral-500"></p>
+                <p class="w-0.5 h-3 bg-neutral-500"></p>
+              </span>
+              <p class="text-sm font-normal font-Inter text-neutral-500">99.6k</p>
+            </div>
+            <!-- vector  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/share.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="px-4 py-2 w-auto h-auto border-b border-neutral-700 flex gap-4">
+        <div class="w-12 h-12">
+          <img class="rounded-full flex-shrink-0" src="/images/users/user-avatar-3.png" alt="profile picture">
+        </div>
+        <div class="w-full flex flex-col gap-2">
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-2">
+              <p class="text-neutral-50">Name</p>
+              <p class="text-neutral-500">@handle • 10h</p>
+            </div>
+            <p class="text-neutral-50">i've seen people absolutely despise auto layout in figma but i think it's a lifesaver-<br>1. tidies everything nice and compact<br>2. makes responsive design effortless<br>3. no manual adjustments post any tweaks<br>4. saves a tonnn of time<br><br>sorry, but will stay an auto layout maxi all life.</p>
+          </div>
+          <div class="py-3 flex justify-between">
+            <!-- comment  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/comment.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">11</p>
+            </div>
+            <!-- group  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/retweet.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">270</p>
+            </div>
+            <!-- heart  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/heart.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">1,869</p>
+            </div>
+            <!-- frame  -->
+            <div class="flex gap-1 items-center justify-center">
+              <span class="flex gap-0.5 items-end">
+                <p class="w-0.5 h-2.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-3.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-2 bg-neutral-500"></p>
+                <p class="w-0.5 h-3 bg-neutral-500"></p>
+              </span>
+              <p class="text-sm font-normal font-Inter text-neutral-500">99.6k</p>
+            </div>
+            <!-- vector  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/share.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="px-4 py-2 w-auto h-auto border-b border-neutral-700 flex gap-4">
+        <div class="w-12 h-12">
+          <img class="rounded-full flex-shrink-0" src="/images/users/user-avatar-4.png" alt="profile picture">
+        </div>
+        <div class="w-full flex flex-col gap-2">
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-2">
+              <p class="text-neutral-50">Name</p>
+              <p class="text-neutral-500">@handle • 10h</p>
+            </div>
+            <p class="text-neutral-50">Writing gets easier after the first sentence.<br><br>Lifting gets easier after the first set.<br><br>People think and think and think until they finally decide to act. Their attention shifts from internal to external, and the difficulty they created in their mind vanishes.</p>
+          </div>
+          <div class="py-3 flex justify-between">
+            <!-- comment  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/comment.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">11</p>
+            </div>
+            <!-- group  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/retweet.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">270</p>
+            </div>
+            <!-- heart  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/heart.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">1,869</p>
+            </div>
+            <!-- frame  -->
+            <div class="flex gap-1 items-center justify-center">
+              <span class="flex gap-0.5 items-end">
+                <p class="w-0.5 h-2.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-3.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-2 bg-neutral-500"></p>
+                <p class="w-0.5 h-3 bg-neutral-500"></p>
+              </span>
+              <p class="text-sm font-normal font-Inter text-neutral-500">99.6k</p>
+            </div>
+            <!-- vector  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/share.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="px-4 py-2 w-auto h-auto border-b border-neutral-700 flex gap-4">
+        <div class="w-12 h-12">
+          <img class="rounded-full flex-shrink-0" src="/images/users/user-avatar-5.png" alt="profile picture">
+        </div>
+        <div class="w-full flex flex-col gap-2">
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-2">
+              <p class="text-neutral-50">Name</p>
+              <p class="text-neutral-500">@handle • 10h</p>
+            </div>
+            <p class="text-neutral-50">I'm entering my relaxation era</p>
+          </div>
+          <div class="py-3 flex justify-between">
+            <!-- comment  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/comment.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">11</p>
+            </div>
+            <!-- group  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/retweet.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">270</p>
+            </div>
+            <!-- heart  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/heart.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">1,869</p>
+            </div>
+            <!-- frame  -->
+            <div class="flex gap-1 items-center justify-center">
+              <span class="flex gap-0.5 items-end">
+                <p class="w-0.5 h-2.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-3.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-2 bg-neutral-500"></p>
+                <p class="w-0.5 h-3 bg-neutral-500"></p>
+              </span>
+              <p class="text-sm font-normal font-Inter text-neutral-500">99.6k</p>
+            </div>
+            <!-- vector  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/share.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="px-4 py-2 w-auto h-auto border-b border-neutral-700 flex gap-4">
+        <div class="w-12 h-12">
+          <img class="rounded-full flex-shrink-0" src="/images/users/user-avatar-6.png" alt="profile picture">
+        </div>
+        <div class="w-full flex flex-col gap-2">
+          <div class="flex flex-col gap-1">
+            <div class="flex gap-2">
+              <p class="text-neutral-50">Name</p>
+              <p class="text-neutral-500">@handle • 10h</p>
+            </div>
+            <p class="text-neutral-50">if you work in tech and your colleagues use the term "tech bro" as a pejorative / unironically, you should start looking for your next job</p>
+          </div>
+          <div class="py-3 flex justify-between">
+            <!-- comment  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/comment.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">11</p>
+            </div>
+            <!-- group  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/retweet.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">270</p>
+            </div>
+            <!-- heart  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/heart.svg" alt="">
+              <p class="text-sm font-normal font-Inter text-neutral-500">1,869</p>
+            </div>
+            <!-- frame  -->
+            <div class="flex gap-1 items-center justify-center">
+              <span class="flex gap-0.5 items-end">
+                <p class="w-0.5 h-2.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-3.5 bg-neutral-500"></p>
+                <p class="w-0.5 h-2 bg-neutral-500"></p>
+                <p class="w-0.5 h-3 bg-neutral-500"></p>
+              </span>
+              <p class="text-sm font-normal font-Inter text-neutral-500">99.6k</p>
+            </div>
+            <!-- vector  -->
+            <div class="flex gap-1 items-center justify-center">
+              <img class="w-3.5 h-3.5" src="/images/share.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </section>
+
+    <!-- navigation bar -->
+    <!-- <section class="px-6 py-4 w-full h-auto bg-neutral-1000 items-center justify-center flex gap-10">
+      <img src="/images/home-active.svg" alt="">
+      <img src="/images/profile-notActive.svg" alt="">
+    </section> -->
+    
+    <section class="justify-end flex m-10">
+        <button class="p-4 rounded-full shadow-lg bg-twitter-blue items-center justify-center flex z-1-">
+            <img class="w-8 h-8 rotate-45" src="/images/add.svg" alt="">
+        </button>
+    </section>
+
+  </section>
+
+
+</body>
+</html>

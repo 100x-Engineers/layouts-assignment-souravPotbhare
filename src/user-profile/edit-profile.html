@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2.1 - Home Feed</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="w-screen h-screen items-center justify-center flex">
+  
+  <!-- user profile -->
+    <section class="w-page h-page bg-neutral-1000 overflow-auto">
+
+        <!-- header -->
+        <section class="pt-3.5 pr-3.5 pb-3 pl-5 w-96 h-11 items-center justify-end flex shrink-0 gap-60">
+            <p class="text-neutral-50">9:41</p>
+            <img src="/images/container.svg" alt="">
+        </section>
+        
+        <section class="px-4 flex flex-col gap-3">
+
+            <!--  -->
+            <section class="py-3 items-center justify-between flex">
+                <div class="items-center flex gap-5">
+                    <a href="/src/user-profile/index.html">
+                        <img  src="/images/arrow-left.svg" alt="">
+                    </a>
+                    <p class="font-Inter font-bold text-base text-neutral-50">Edit profile</p>
+                </div>
+                <button>
+                    <div class="px-5 py-2 rounded-3xl items-center bg-neutral-50 hover:bg-neutral-200 justify-center">
+                        <a href="/src/user-profile/index.html">
+                            <p class="font-Inter font-bold text-sm text-neutral-1000">Save</p>
+                        </a>
+                    </div>
+                </button>
+            </section>
+            
+            <!-- cover image -->
+            <section class="w-auto h-auto">
+                <img src="/images/cover-image-edit.png" alt="">
+            </section>
+
+            <!-- user avatar -->
+            <section class="px-4 w-page h-auto">
+                <img class="w-24 h-24 -mt-20 rounded-4xl flex-shrink-0" src="/images/users/user-avatar-edit.png" alt="profile picture">
+            </section>
+
+            <!-- detail inputs -->
+            <section class="self-stretch flex flex-col gap-5">
+                    
+                <fieldset class="px-3 py-4 w-110.5 rounded border border-neutral-500 flex gap-2.5">
+                    <legend class="px-1 text-sm font-medium text-neuborder-neutral-500">Name</legend>
+                    <div class="w-full flex justify-between items-center">
+                      <input class="w-full h-auto text-base items-center text-neutral-50 bg-transparent outline-none" type="text" placeholder="Type your name" value="Sourav Potbhare">
+                      <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                    </div>
+                </fieldset>
+    
+                <fieldset class="px-3 py-4 w-110.5 rounded border border-neutral-500 flex gap-2.5">
+                    <legend class="px-1 text-sm font-medium text-neutral-500">Bio</legend>
+                    <input class="w-full text-base text-neutral-50 items-center bg-transparent outline-none" type="email" placeholder="Email" value="Digital Goodies Team - Web & Mobile UI/UX development; Graphics; Illustrations">
+                    <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                </fieldset>
+                  
+                <fieldset class="px-3 py-4 w-110.5 rounded border border-neutral-500 flex gap-2.5">
+                    <legend class="px-1 text-sm font-medium text-neutral-500">Location</legend>
+                    <input class="w-full h-auto text-base items-center text-neutral-50 bg-transparent outline-none" type="email" placeholder="Location">
+                    <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                </fieldset>
+
+                <fieldset class="px-3 py-4 w-110.5 rounded border border-neutral-500 flex gap-2.5">
+                    <legend class="px-1 text-sm font-medium text-neutral-500">Website</legend>
+                    <input class="w-full h-auto text-base items-center text-neutral-50 bg-transparent outline-none" type="email" placeholder="Website">
+                    <!-- <img class="w-6 h-6 flex-shrink-0" src="/images/tick.svg" alt=""> -->
+                </fieldset>
+                
+            </section>
+
+        </section>
+
+    </section>
+
+
+</body>
+</html>
